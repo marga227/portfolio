@@ -21,9 +21,11 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
+        working-directory: ./frontend
         run: yarn install
 
       - name: Build and deploy
+        working-directory: ./frontend
         run: |
           yarn generate
           yarn install -g gh-pages
