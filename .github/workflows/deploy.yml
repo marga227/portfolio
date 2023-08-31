@@ -29,6 +29,6 @@ jobs:
         run: |
           yarn generate
           yarn add gh-pages
-          gh-pages -d di
+          gh-pages -d dist
         env:
           NUXT_API_BASE_URL: ${{secrets.API_URL}}

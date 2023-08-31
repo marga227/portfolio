@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div
-			class="rounded-lg border border-gray-300 p-8 max-w-[300px] cursor-pointer"
+			class="rounded-lg border border-gray-300 p-8 max-w-[305px] cursor-pointer"
 			@click="handleBookModal"
 		>
 			<p>{{ project.title }}</p>
