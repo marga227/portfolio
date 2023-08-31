@@ -40,3 +40,4 @@ jobs:
           npx gh-pages -d dist
         env:
           NUXT_API_BASE_URL: ${{secrets.API_URL}}
+          GH_TOKEN: ${{secrets.GH_TOKEN}}
