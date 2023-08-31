@@ -24,6 +24,9 @@ jobs:
         working-directory: ./frontend
         run: yarn install
 
+      - name: Install gh-pages
+        run: yarn add gh-pages
+
       - name: Build and deploy
         working-directory: ./frontend
         run: |
