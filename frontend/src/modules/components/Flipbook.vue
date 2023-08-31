@@ -117,6 +117,7 @@ onMounted(async () => {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 2px;
 }
 
 .action-bar .btn {

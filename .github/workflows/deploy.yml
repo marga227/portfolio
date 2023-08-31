@@ -24,14 +24,11 @@ jobs:
         working-directory: ./frontend
         run: yarn install
 
-      - name: Install gh-pages
-        run: yarn add gh-pages
-
       - name: Build and deploy
         working-directory: ./frontend
         run: |
           yarn generate
-          yarn install -g gh-pages
+          yarn add gh-pages
           gh-pages -d di
         env:
           NUXT_API_BASE_URL: ${{secrets.API_URL}}
