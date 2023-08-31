@@ -1,6 +1,8 @@
 {
-	"name": "nuxt-app",
+	"name": "portfolio",
 	"private": true,
+	"author": "margazm",
+	"homepage": "https://github.com/marga227/portfolio/#readme",
 	"scripts": {
 		"build": "nuxt build",
 		"dev": "nuxt dev",

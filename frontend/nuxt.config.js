@@ -25,6 +25,9 @@ export default defineNuxtConfig({
 			strapiUrl: process.env.NUXT_STRAPI_URL,
 		},
 	},
+	router: {
+		base: '/portfolio/',
+	},
 	srcDir: './src',
 	postcss: {
 		plugins: {
