@@ -1,7 +1,7 @@
 <template>
 	<form @submit.prevent="submitForm" class="mx-auto max-w-lg">
 		<div class="w-full mb-4">
-			<label for="name" class="text-gray-600 text-lg">Nombre</label>
+			<label for="name" class="text-gray-200 md:text-gray-600 text-lg">Nombre</label>
 			<input
 				v-model="formData.name"
 				type="text"
@@ -13,7 +13,9 @@
 		</div>
 
 		<div class="w-full mb-4">
-			<label for="email" class="text-gray-600 text-lg">Correo Electrónico</label>
+			<label for="email" class="text-gray-200 md:text-gray-600 text-lg"
+				>Correo Electrónico</label
+			>
 			<input
 				v-model="formData.email"
 				type="email"
@@ -25,7 +27,7 @@
 		</div>
 
 		<div class="w-full mb-4">
-			<label for="subject" class="text-gray-600 text-lg">Asunto</label>
+			<label for="subject" class="text-gray-200 md:text-gray-600 text-lg">Asunto</label>
 			<input
 				v-model="formData.subject"
 				type="text"
@@ -37,7 +39,7 @@
 		</div>
 
 		<div class="w-full mb-4">
-			<label for="message" class="text-gray-600 text-lg">Mensaje</label>
+			<label for="message" class="text-gray-200 md:text-gray-600 text-lg">Mensaje</label>
 			<textarea
 				v-model="formData.message"
 				id="message"
