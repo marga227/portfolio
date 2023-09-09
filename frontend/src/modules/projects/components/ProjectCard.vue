@@ -1,11 +1,14 @@
 <template>
 	<div>
 		<div
-			class="rounded-lg border border-gray-300 p-8 max-w-[306px] cursor-pointer"
+			class="rounded-lg max-w-[350px] cursor-pointer overflow-hidden hover:scale-105"
 			@click="handleBookModal"
 		>
-			<p>{{ project.title }}</p>
-			<p class="truncate">{{ project.description }}</p>
+			<img :src="coverImage" alt="Portada del proyecto" />
+			<div class="bg-[#f5f5f5] p-4 py-8">
+				<p class="mb-4 font-medium">{{ project.title }}</p>
+				<p class="line-clamp-3">{{ project.description }}</p>
+			</div>
 			<BookModal
 				v-if="showBookModal"
 				:open="showBookModal"
@@ -25,7 +28,12 @@ const props = defineProps({
 });
 
 const images = ref([]);
+
 let showBookModal = ref(false);
+
+const coverImage = computed(() => {
+	return props.project.cover.data.attributes.url;
+});
 onMounted(() => {
 	const photosBySections = props.project.Photos.map((photo) => photo.image.data);
 	const photos = photosBySections.flat();

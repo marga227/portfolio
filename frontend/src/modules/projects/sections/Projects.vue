@@ -1,14 +1,14 @@
 <template>
 	<div
-		class="w-full flex flex-col justify-center items-center px-1 py-8"
+		class="w-full flex flex-col justify-center items-center px-1 py-16 bg-[#fbfbfa]"
 		id="mis-proyectos"
 	>
 		<div class="container">
-			<h3 class="text-2xl font-bold mt-8 mb-4 text-center">Mis proyectos:</h3>
+			<h3 class="text-3xl font-bold text-center">Mis proyectos:</h3>
 			<div
 				v-for="project in projects"
 				:key="project.id"
-				class="flex flex-wrap gap-2 mb-8 items-center justify-center"
+				class="flex flex-wrap gap-2 my-8 items-center justify-center"
 			>
 				<ProjectCard :project="project.attributes" />
 			</div>

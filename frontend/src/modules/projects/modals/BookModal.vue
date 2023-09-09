@@ -8,7 +8,7 @@
 		>
 			<div class="relative z-[50] w-[100vw] lg:w-[70vw] h-[80vh]">
 				<div
-					class="absolute bg-gray-100 rounded-full top-2 right-2 z-[60] cursor-pointer"
+					class="absolute bg-gray-100 rounded-full -top-2 right-0 z-[60] cursor-pointer hover:opacity-80"
 				>
 					<img
 						src="@/assets/icons/CloseIcon.png"
@@ -19,7 +19,7 @@
 				</div>
 				<Flipbook :images="images" />
 			</div>
-			<span class="fixed inset-0 bg-black opacity-70"></span>
+			<span class="fixed inset-0 bg-black opacity-80"></span>
 		</div>
 	</Teleport>
 </template>

@@ -1,6 +1,8 @@
 <template>
-	<div class="h-screen w-full flex flex-col justify-center items-center px-1">
-		<div class="container flex flex-col gap-32">
+	<div class="h-screen">
+		<div
+			class="bg-[#176585] w-[100%] sm:w-[50%] md:w-[40%] min-h-screen flex flex-col justify-evenly sm:items-center"
+		>
 			<Title />
 			<ActionsButtons />
 		</div>

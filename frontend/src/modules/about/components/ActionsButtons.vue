@@ -1,8 +1,10 @@
 <template>
-	<div class="mt-12 flex gap-4 self-start">
-		<button class="rounded-full bg-black text-white p-4 hover:font-bold">
+	<div class="flex gap-4 self-start px-8">
+		<button
+			class="rounded-full bg-[#20ccd8] text-white font-semibold text-xl p-4 hover:opacity-80"
+		>
 			Contáctame
 		</button>
-		<button class="text-white underline font-medium">Descargar CV</button>
+		<button class="text-white text-xl underline font-medium">Descargar CV</button>
 	</div>
 </template>

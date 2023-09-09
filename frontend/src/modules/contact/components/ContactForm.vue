@@ -7,7 +7,7 @@
 				type="text"
 				id="name"
 				name="name"
-				class="w-full p-2 border border-gray-600 outline-none"
+				class="w-full p-2 border border-gray-300 rounded-lg mt-2 mb-4 focus:ring-2 focus:ring-blue-600 outline-none"
 			/>
 			<span v-if="errors.name" class="error">{{ errors.name[0] }}</span>
 		</div>
@@ -19,9 +19,21 @@
 				type="email"
 				id="email"
 				name="email"
-				class="w-full p-2 border border-gray-600 outline-none"
+				class="w-full p-2 border border-gray-300 rounded-lg mt-2 mb-4 focus:ring-2 focus:ring-blue-600 outline-none"
 			/>
 			<span v-if="errors.email" class="error">{{ errors.email[0] }}</span>
+		</div>
+
+		<div class="w-full mb-4">
+			<label for="subject" class="text-gray-600 text-lg">Asunto</label>
+			<input
+				v-model="formData.subject"
+				type="text"
+				id="subject"
+				name="subject"
+				class="w-full p-2 border border-gray-300 rounded-lg mt-2 mb-4 focus:ring-2 focus:ring-blue-600 outline-none"
+			/>
+			<span v-if="errors.subject" class="error">{{ errors.email[0] }}</span>
 		</div>
 
 		<div class="w-full mb-4">
@@ -30,14 +42,14 @@
 				v-model="formData.message"
 				id="message"
 				name="message"
-				class="w-full p-2 border border-gray-600 outline-none"
+				class="w-full p-2 border border-gray-300 rounded-lg mt-2 mb-4 resize-none focus:ring-2 focus:ring-blue-600 outline-none"
 			></textarea>
 			<span v-if="errors.message" class="error">{{ errors.message[0] }}</span>
 		</div>
 
 		<button
 			type="submit"
-			class="rounded-full bg-black text-white p-4 px-12 block mx-auto hover:font-bold"
+			class="rounded-full bg-[#20ccd8] text-white p-4 px-12 block font-semibold text-xl w-full mx-auto hover:opacity-80"
 		>
 			Enviar
 		</button>
@@ -54,6 +66,7 @@ export default {
 			name: '',
 			email: '',
 			message: '',
+			subject: '',
 		};
 
 		const rules = {

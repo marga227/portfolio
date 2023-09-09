@@ -23,14 +23,14 @@
 				<img
 					src="@/assets/icons/LeftIcon.png"
 					alt="btn left"
-					class="text-gray-500 text-3xl cursor-pointer bg-gray-100 rounded-full"
+					class="text-gray-500 text-3xl cursor-pointer bg-gray-100 rounded-full hover:opacity-80"
 					:class="[stylesDisabled]"
 					@click="flipbook.flipLeft"
 				/>
 				<img
 					src="@/assets/icons/plusIcon.png"
 					alt="btn plus"
-					class="text-gray-500 text-3xl cursor-pointer bg-gray-100 rounded-full"
+					class="text-gray-500 text-3xl cursor-pointer bg-gray-100 rounded-full hover:opacity-80"
 					:class="[stylesDisabled]"
 					@click="flipbook.zoomIn"
 				/>
@@ -40,14 +40,14 @@
 				<img
 					src="@/assets/icons/minusIcon.png"
 					alt="btn minus"
-					class="text-gray-500 text-3xl cursor-pointer bg-gray-100 rounded-full"
+					class="text-gray-500 text-3xl cursor-pointer bg-gray-100 rounded-full hover:opacity-80"
 					:class="[stylesDisabled]"
 					@click="flipbook.zoomOut"
 				/>
 				<img
 					src="@/assets/icons/rightIcon.png"
 					alt="btn right"
-					class="text-gray-500 text-3xl cursor-pointer bg-gray-100 rounded-full"
+					class="text-gray-500 text-3xl cursor-pointer bg-gray-100 rounded-full hover:opacity-80"
 					:class="[stylesDisabled]"
 					@click="flipbook.flipRight"
 				/>

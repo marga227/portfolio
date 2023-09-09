@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="sticky top-0 left-0 bg-[#212433] flex items-center justify-between p-0 px-6 text-secondary relative"
+		class="sticky top-0 left-0 bg-[#161616] flex items-center justify-between p-0 px-6 text-secondary relative"
 	>
 		<img
 			src="~/assets/images/logo-white.png"
