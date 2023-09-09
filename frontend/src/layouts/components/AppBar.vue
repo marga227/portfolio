@@ -7,7 +7,12 @@
 			alt="architect logo"
 			class="cursor-pointer w-28 sm:w-32 2xl:w-36"
 		/>
-		<div>
+		<img
+			src="~/assets/icons/menu.svg"
+			alt="menu logo"
+			class="lg:hidden cursor-pointer w-12 text-white"
+		/>
+		<div class="hidden lg:block">
 			<NuxtLink to="/#about" class="px-4 py-3 text-xl hover:font-semibold text-white"
 				>Sobre mi</NuxtLink
 			>

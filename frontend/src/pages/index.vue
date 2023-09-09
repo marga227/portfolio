@@ -1,7 +1,7 @@
 <template>
 	<BaseLayout>
 		<div
-			class="-mt-0.5 bg-[url('@/assets/images/bg.svg')] bg-no-repeat bg-cover h-auto w-full flex flex-col justify-center items-center px-1"
+			class="-mt-0.5 bg-[#212433] lg:bg-[url('@/assets/images/bg.svg')] bg-no-repeat bg-cover h-auto w-full flex flex-col justify-center items-center px-1"
 		>
 			<div class="container">
 				<About />
